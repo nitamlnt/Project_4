@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/themes/images/favicon/favicon.ico">
+    <title>PawPaw Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="PawWeb.css">
+</head>
+<body>
+    <section class="PromotionBar">
+        <section class="PromoBar" style="background-color: white;">
+            <div class="PromoBar-slide">
+              <div class="swiper js-slide-promo-bar">
+                <div class="swiper-wrapper">
+                    <div class="PromoBar-item swiper-slide">
+                      
+                      <p class="PromoBar-item PromoBar-item--mobile athletics" style="color: #1d1f32"><a" title="Petshop Sale"><strong style="color: rgb(12, 49, 70;">PETSHOP SALE</strong></a> - 15% OFF with code: <strong style="color: rgb(12, 49, 70;">PAWSHOP</strong>
+                      </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </section>
+    
+    <!-- header section -->
+    <header class="header">
+
+        <a href="PawWeb.html" class="logo"><img src="LogoPaw.png" alt=""></a>
+        
+        <div class="menu">
+        <ul>
+            <li><a class="link" href="AboutUs.html">About Us</a></li>
+            <li><a class="link" href="#gallery">Featured Brands</a></li>	
+            <li><a class="link" href="#arrivals">Best Sellers</a></li>
+            <li><a class="link" href="#blogs">Blog</a></li>
+        </div>
+    </header>
+    <!-- header section ends -->
+    
+    <!-- home section starts  -->
+    
+    <!-- Slideshow container -->
+    
+    <div class="Slideshow">
+        <div class="slide">
+          <img src="OpenFoto.jpg" alt="" height="470">
+        </div>
+        <div class="slide">
+          <img src="DealsFoto.jpg" alt="" height="470">
+        </div>
+        <div class="slide">
+          <img src="SaleFoto.jpg" alt="" height="500">
+        </div>
+        <div class="navigation">
+          <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+          <a class = "next" onclick = "plusSlides(-1)">&#10095;</a>
+        </div>
+      </div>
+  
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+  
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+  
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("slide");
+          if (n > slides.length)
+          {
+            slideIndex = 1;
+          }
+          if (n < 1)
+          {
+            slideIndex = slides.length
+          }
+          for (i = 0; i < slides.length; i++)
+          {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex-1].style.display = "block";
+        }
+      </script>
+
+    <!-- home section ends -->
+
+    <section class="category">
+
+        <a href="#" class="box">
+            <p>Dry Food</p>
+        </a>
+    
+        <a href="#" class="box">
+            <p>Wet Food</p>
+        </a>
+    
+        <a href="#" class="box">
+            <p>Snack</p>
+        </a>
+    
+        <a href="#" class="box">
+            <p>Vitamin</p>
+        </a>
+    
+    </section>
+    
+    <!-- category section ends -->
+    
+    <!-- about section starts  -->
+    
+    <section class="about" id="about">
+    
+        <div class="content">
+            <span>why choose us?</span>
+            <h3>Our pets are our family</h3>
+            <p>Because our shop sells a variety of food and vitamins for your beloved cat with various existing brands. Our online store is guaranteed to be trusted and to the hygiene that is sold.</p>
+        </div>
+        <div class="video">
+            <iframe src="Netto-Katzen.mp4" width="400" height="250"></iframe>
+        </div>
+    </section>
+    
+    <!-- about section ends -->
+    
+    <!-- gallery section starts  -->
+    
+    <section class="gallery" id="gallery">
+    
+        <div class="heading">
+            <h1>FEATURED BRANDS</h1>
+        </div>
+    
+        <div class="lightbox">
+            <a href="BoltLogo.jpg"><img src="BoltLogo.jpg" alt=""></a>
+            <a href="GNCLogo.jpg"><img src="GNCLogo.jpg" alt=""></a>
+            <a href="LaxaLogo.jpg"><img src="LaxaLogo.jpg" alt=""></a>
+            <a href="MeoLogo.jpg"><img src="MeoLogo.jpg" alt=""></a>
+            <a href="RCLogo.jpg"><img src="RCLogo.jpg" alt=""></a>
+            <a href="WhiskasLogo.jpg"><img src="WhiskasLogo.jpg" alt=""></a>
+        </div>
+    
+    </section>
+    
+    <!-- gallery section ends -->
+
+    <!-- arrivals section starts  -->
+    
+    <section class="arrivals" id="arrivals">
+    
+        <div class="heading">
+            <h1>BEST SELLERS</h1>
+        </div>
+
+        <div class="lightbox">
+            <a href="Bolt.jpg"><img src="Bolt.jpg" alt=""></a>
+            <a href="GNC.jpg"><img src="GNC.jpg" alt=""></a>
+            <a href="LaxaCat.jpg"><img src="LaxaCat.jpg" alt=""></a>
+            <a href="Meo.jpg"><img src="Meo.jpg" alt=""></a>
+            <a href="RoyalCanin.jpg"><img src="RoyalCanin.jpg" alt=""></a>
+            <a href="Whiskas.jpg"><img src="Whiskas.jpg" alt=""></a>
+        </div>
+        
+    </section>
+    
+    <!-- arrivals section ends -->
+    
+    <!-- blogs section starts  -->
+    
+    <section class="blogs" id="blogs">
+    
+        <div class="heading">
+            <h1> OUR DAILY BLOG</h1>
+        </div>
+    
+        <div class="container">
+            <a href="dailyblog.jpg"><img src="dailyblog.jpg" alt="" width="1000" height="400"></a>
+    
+    </section>
+    
+    <!-- blogs section ends -->
+    
+    <!-- footer section starts  -->
+    
+    <section class="footer">
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>About Us</h3>
+                <a href="AboutUs.html" class="link"> <i class="fas fa-angle-right"></i> Company Information</a>
+                <a href="ContactUs.html" class="link"> <i class="fas fa-angle-right"></i> Contact Us </a>
+                <a href="Store.html" class="link"> <i class="fas fa-angle-right"></i> Our Store</a>
+
+            </div>
+    
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> Futured Brand</a>
+                <a class="link" href="#arrivals"> <i class="fas fa-angle-right"></i> Best Seller</a>
+                <a class="link" href="#blogs"> <i class="fas fa-angle-right"></i> blogs</a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+                <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+                <p> <i class="fas fa-envelope"></i> PawPaw.com@gmail.com </p>
+                <p> <i class="fas fa-map"></i> Jakarta, Indonesia - 273014 </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+                
+            </div>
+    
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="enter your email" id="" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+    
+        </div>
+
+        <br>
+        <br> 
+        <br>
+        <div class="Payment">
+            <img src="image-removebg-preview.png" alt="payment" width="350" height="70"> 
+        </div>
+    
+        <div class="credit"> created by <span>Paw.team designer</span> | all rights reserved! </div>
+    
+    </section>
+    
+    <!-- footer section ends -->
+        
+    </body>
+    </html>
